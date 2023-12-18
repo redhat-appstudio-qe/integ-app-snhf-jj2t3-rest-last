@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-bclz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/nbe-e2e-gbep-tenant/integ-app-snhf/hacbs-test-project-bclz@sha256:7f6a81d52a7e1eaefebf12569c8d8f4bb9eccfaa583e832c2e0bb2b432b82f2b
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
